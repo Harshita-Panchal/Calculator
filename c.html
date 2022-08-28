@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="c.css">
+</head>
+
+<body>
+  <div class="title">
+    <div class="calculator">
+      <input type="text" id="input" placeholder="0" disabled />
+      <button onclick="deletebutton()" id="delete">del</button>
+      <table>
+        <tr>
+          <td><button onclick="operators('+')" class="operators">+</button></td>
+          <td><button onclick="operators('-')" class="operators">-</button></td>
+          <td><button onclick="operators('*')" class="operators">*</button></td>
+          <td><button onclick="operators('/')" class="operators">/</button></td>
+        </tr>
+
+        <tr>
+          <td><button onclick="number('7')" >7</button></td>
+          <td><button onclick="number('8')">8</button></td>
+          <td><button onclick="number('9')">9</button></td>
+          <td><button onclick="equal()" class="equal" id="equal">=</button></td>
+        </tr>
+
+        <tr>
+          <td><button onclick="number('4')">4</button></td>
+          <td><button onclick="number('5')">5</button></td>
+          <td><button onclick="number('6')">6</button></td>
+        </tr>
+
+        <tr>
+          <td><button onclick="number('1')">1</button></td>
+          <td><button onclick="number('2')">2</button></td>
+          <td><button onclick="number('3')">3</button></td>
+        </tr>
+
+        <tr>
+          <td><button onclick="number('0')">0</button></td>
+          <td><button onclick="number('.')">.</button></td>
+          <td><button onclick="clearResult()" id="clear">C</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+<script src="j.js"></script>
+</body>
+
+</html>
